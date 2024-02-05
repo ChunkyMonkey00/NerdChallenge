@@ -1,3 +1,42 @@
+# ArrayQuest: Code Adventure
+
+Welcome to **ArrayQuest**, an exciting coding adventure where you navigate through arrays using a unique coding language. Use commands to explore, manipulate, and solve challenges in this array-based game. You can play it as a language or dive into the game itself.
+
+## Game Description
+
+In ArrayQuest, you'll be faced with a series of challenges that require you to manipulate an array using a set of commands. The commands include moving through the array, printing values, creating loops, and performing mathematical operations.
+
+## Command Documentation
+
+### Basic Commands:
+- `>`: Move one step forward in the array.
+- `<`: Move one step backward in the array.
+- `.`: Print the number at the current position.
+- `(`, `)`: Create and end a nested block for advanced operations.
+- `number`: Set the current position to the specified number.
+- `+`, `-`, `*`, `/`: Perform basic arithmetic operations on the current number.
+
+### Advanced Commands:
+- `^`: Insert a saved number into the current position.
+- `_`: Save the current number as a variable.
+- `:`: Inherit values within a nest or loop.
+- `;`: Carry values outside of a nest or loop.
+
+### Loops and Challenges:
+- `[`, `]`: Start and end a loop, allowing repetitive operations.
+- Type "challenge" in the console to initiate challenges.
+- Win challenges by setting the array to the specified number.
+- Complete challenges with the fewest characters to earn higher scores.
+
+## Try it out!
+
+Visit the [ArrayQuest Demo](https://chunkymonkey00.github.io/NerdChallenge/) to experience the game and test your coding skills.
+
+Enjoy your coding adventure in the world of ArrayQuest! 🚀  
+  
+---
+  
+
 # Command Documentation
 
 ## Commands:
