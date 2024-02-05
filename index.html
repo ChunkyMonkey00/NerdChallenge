@@ -1,0 +1,178 @@
+<style>
+	body {
+		background: black;
+		color: #00ff00;
+		/* Green color */
+		font-family: 'Courier New', monospace;
+		margin: 0;
+	}
+
+  * {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+	#container {
+		width: 80%;
+		height: 50px;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%);
+		border: 1px solid #00ff00;
+		/* Green color */
+		display: flex;
+		background: repeating-linear-gradient(0deg,
+				transparent,
+				transparent 5px,
+				#00ff00 5px,
+				#00ff00 10px);
+	}
+
+	.box {
+		flex: 1;
+		height: 100%;
+		font-size: 40px;
+		text-align: center;
+		border: 1px solid #00ff00;
+		/* Green color */
+		background-color: black;
+	}
+
+	#cmdContainer {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		height: 50px;
+		width: 80%;
+		position: absolute;
+		display: flex;
+	}
+
+	#expectedContainer {
+		top: 60%;
+		left: 50%;
+		transform: translate(-15%);
+		height: 50px;
+		width: 80%;
+		position: absolute;
+		display: flex;
+	}
+
+	#input {
+		flex: 1;
+		height: 30px;
+		background-color: black;
+		color: #00ff00;
+		/* Green color */
+		border: 1px solid #00ff00;
+		/* Green color */
+		padding: 5px;
+		font-family: 'Courier New', monospace;
+	}
+
+	#input:focus {
+		outline: none;
+		border: 1px solid #00ff00;
+		/* Green color */
+	}
+
+	#cursor {
+		font-size: 40px;
+		position: absolute;
+	}
+
+	#consoleContainer {
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		flex: 1;
+		overflow-y: auto;
+		background-color: black;
+		color: #00ff00;
+		border: 1px solid #00ff00;
+		padding: 10px;
+		font-family: 'Courier New', monospace;
+		width: calc(100% - 22px);
+		height: 100px;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+
+	#consoleIcon {
+		border: 1px solid rgba(0, 255, 0, 0.5)
+	}
+
+	#consoleInput {
+		flex: 1;
+		height: 15px;
+		background-color: black;
+		color: #00ff00;
+		/* Green color */
+		border-left: 0.2px solid #00ff00;
+		border-right: none;
+		border-top: 0;
+		border-bottom: 0;
+		/* Green color */
+		padding: 5px;
+		font-family: 'Courier New', monospace;
+		width: 93%;
+	}
+
+	#consoleInput:focus {
+		outline: none;
+		border: none;
+		border-left: 1px solid #00ff00;
+		/* Green color */
+	}
+
+	#consoleOutput {
+		overflow-y: scroll;
+		width: 100%;
+		height: 75%;
+		overflow-x: scroll;
+	}
+
+	/* Custom scrollbar for the consoleContainer */
+	#consoleOutput::-webkit-scrollbar {
+		width: 10px;
+		/* Set the width of the scrollbar */
+	}
+
+	#consoleOutput::-webkit-scrollbar-thumb {
+		background-color: #00ff00;
+		/* Green color for the thumb */
+		border-radius: 5px;
+		/* Rounded corners for the thumb */
+	}
+
+	#consoleOutput::-webkit-scrollbar-track {
+		background-color: black;
+		/* Black color for the track */
+	}
+
+	#consoleOutput::-webkit-scrollbar-corner {
+		background-color: black;
+		/* Match the background color */
+	}
+</style>
+<div id="cursor">^</div>
+<div id='container'>
+	<div class="box" id="box0"></div>
+	<div class="box" id="box1"></div>
+	<div class="box" id="box2"></div>
+	<div class="box" id="box3"></div>
+	<div class="box" id="box4"></div>
+	<div class="box" id="box5"></div>
+	<div class="box" id="box6"></div>
+	<div class="box" id="box7"></div>
+</div>
+<div id="cmdContainer">
+	<input type="text" id="input" autocomplete="off"></input>
+</div>
+<div id='consoleContainer'>
+	<div id='consoleIcon'>&nbsp;>&nbsp;<input id="consoleInput" autocomplete="off"></input></div>
+	<br>
+	<div id='consoleOutput'></div>
+</div>
