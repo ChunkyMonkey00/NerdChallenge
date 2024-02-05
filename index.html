@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayQuest</title>
 <style>
 	body {
 		background: black;
@@ -157,22 +164,31 @@
 		/* Match the background color */
 	}
 </style>
-<div id="cursor">^</div>
-<div id='container'>
-	<div class="box" id="box0"></div>
-	<div class="box" id="box1"></div>
-	<div class="box" id="box2"></div>
-	<div class="box" id="box3"></div>
-	<div class="box" id="box4"></div>
-	<div class="box" id="box5"></div>
-	<div class="box" id="box6"></div>
-	<div class="box" id="box7"></div>
-</div>
-<div id="cmdContainer">
-	<input type="text" id="input" autocomplete="off"></input>
-</div>
-<div id='consoleContainer'>
-	<div id='consoleIcon'>&nbsp;>&nbsp;<input id="consoleInput" autocomplete="off"></input></div>
-	<br>
-	<div id='consoleOutput'></div>
-</div>
+</head>
+
+<body>
+    <div id="cursor">^</div>
+    <div id='container'>
+        <div class="box" id="box0"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+    </div>
+    <div id="cmdContainer">
+        <input type="text" id="input" autocomplete="off">
+    </div>
+    <div id='consoleContainer'>
+        <div id='consoleIcon'>&nbsp;>&nbsp;<input id="consoleInput" autocomplete="off"></div>
+        <br>
+        <div id='consoleOutput'></div>
+    </div>
+
+    <!-- Link your JavaScript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
