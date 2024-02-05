@@ -1,4 +1,4 @@
-# ArrayQuest: Code Adventure
+# ArrayQuest
 
 Welcome to **ArrayQuest**, an exciting coding adventure where you navigate through arrays using a unique coding language. Use commands to explore, manipulate, and solve challenges in this array-based game. You can play it as a language or dive into the game itself.
 
