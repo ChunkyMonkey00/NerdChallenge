@@ -30,7 +30,7 @@ In ArrayQuest, you'll be faced with a series of challenges that require you to m
 
 ## Try it out!
 
-Visit the [ArrayQuest Demo](https://chunkymonkey00.github.io/NerdChallenge/) to experience the game and test your coding skills.
+Visit the <a href="https://chunkymonkey00.github.io/NerdChallenge/" target="_blank">ArrayQuest Demo</a> to experience the game and test your coding skills.
 
 Enjoy your coding adventure in the world of ArrayQuest! 🚀  
   
