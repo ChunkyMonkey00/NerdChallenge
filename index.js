@@ -731,7 +731,7 @@ function findCommands(currentArray, targetArray) {
         if (diff < -2) commands += "/" + mord;
         if (diff > 2) commands += "*" + mord;
       } else {
-        if((diff > 4 || diff < 4) && currentArray[i]!=0 && targetArray[i]!=0) {
+        if((diff > 4 || diff < -4) && currentArray[i]!=0 && targetArray[i]!=0) {
           commands += "*"+targetArray[i]+"/"+currentArray[i];
         } else {
         // Choose the appropriate command based on the difference
