@@ -702,8 +702,8 @@ const cursorBlink = setInterval(() => {
 
 /* Auto solver */
 function findMorD(diff, x, y) {
-  if(diff > 2) {
-    if(Number.isInteger(y / x)) {
+  if (diff > 2) {
+    if (Number.isInteger(y / x)) {
       return y / x
     } else {
       return null;
@@ -727,18 +727,20 @@ function findCommands(currentArray, targetArray) {
       let diff = targetArray[i] - currentArray[i];
 
       let mord = findMorD(diff, currentArray[i], targetArray[i]);
-      if(mord != null) {
-        if(diff < -2) commands += "/"+mord;
+      if (mord != null) {
+        if (diff < -2) commands += "/" + mord;
         if (diff > 2) commands += "*" + mord;
       } else {
-
-      // Choose the appropriate command based on the difference
-      if (diff > 0) {
-        commands += "+".repeat(diff);
-      } else if (diff < 0) {
-        commands += "-".repeat(Math.abs(diff));
-      }
-
+        if((diff > 4 || diff < 4) && currentArray[i]!=0 && targetArray[i]!=0) {
+          commands += "*"+targetArray[i]+"/"+currentArray[i];
+        } else {
+        // Choose the appropriate command based on the difference
+        if (diff > 0) {
+          commands += "+".repeat(diff);
+        } else if (diff < 0) {
+          commands += "-".repeat(Math.abs(diff));
+        }
+        }
       }
 
     }
