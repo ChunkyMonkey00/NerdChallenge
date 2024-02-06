@@ -95,6 +95,11 @@ Enjoy your coding adventure in the world of ArrayQuest! 🚀
 - As such, you are encouraged to use loops as much as possible
 - All defining characters are ignored (num of times to run loop, `:`, and `;`)
 
+## Tips:
+- Use `[80>]` to reset the board, or type `clear()` in the console.
+- Any whole number (challenges will only give whole numbers) can be reached by the series `x*y/n=z`, where `y=z` n = `x*z`.
+- This can be usefule for, say, getting from 3 to 7 without adding. You can do `3*7/3`.
+
 ---
 - jamesbaus on UC
 - ChunkyMonkey00 on github
