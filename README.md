@@ -1,10 +1,8 @@
-# ArrayQuest
-
-Welcome to **ArrayQuest**, an exciting coding adventure where you navigate through arrays using a unique coding language. Use commands to explore, manipulate, and solve challenges in this array-based game. You can play it as a language or dive into the game itself.
+# Nerd Challenge
 
 ## Game Description
 
-In ArrayQuest, you'll be faced with a series of challenges that require you to manipulate an array using a set of commands. The commands include moving through the array, printing values, creating loops, and performing mathematical operations.
+You'll be faced with a series of challenges that require you to manipulate an array using a set of commands. The commands include moving through the array, creating loops, and performing mathematical operations.
 
 ## Command Documentation
 
