@@ -1,0 +1,11 @@
+This algorithm is made by yours truly, and the intent is to create a simple algorithm that always settles for average.
+In return it uses very little memory, and is super simple to make/understand.
+
+I call it: fuck. Becuase i didnt know what the fuck i was doing when creating it, and i still don't.
+
+Anyways it works like so: find a target, find the difference of the current to the target. Create the simplest possible way to reach the target (usually increment/decrement).
+Take the array of super long but simple code, and run it through a check that transforms it into a looped version of itself.
+
+It is so simple even i can understand it.
+
+Enjoy fucking around and finding out with fuck.
